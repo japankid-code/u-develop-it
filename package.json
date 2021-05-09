@@ -1,0 +1,28 @@
+{
+  "name": "u-develop-it",
+  "version": "1.0.0",
+  "description": "first database project for boot camp.. Link to repo is [here](https://github.com/japankid-code/u-develop-it/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/japankid-code/u-develop-it.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/japankid-code/u-develop-it/issues"
+  },
+  "homepage": "https://github.com/japankid-code/u-develop-it#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
