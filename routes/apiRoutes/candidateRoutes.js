@@ -5,14 +5,14 @@ const inputCheck = require('../../utils/inputCheck');
 
 // get all candidates
 router.get('/candidates', (req, res) => {
-  sql = `SELECT candidates.*, parties.name
+  const sql = `SELECT candidates.*, parties.name
          AS party_name
          FROM candidates
          LEFT JOIN parties
          ON candidates.party_id = parties.id`;
   db.query(sql, (err, rows) => {
     if (err) {
-      res.status.json({ error: err.message });
+      res.status(500).json({ error: err.message });
       return;
     }
     res.json({
